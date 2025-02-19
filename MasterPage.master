@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blood Bank</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link href="css/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .navbar {
+            background-color: #1E3A5F;
+            border: none;
+            height: 50px;
+        }
+        .navbar a {
+            color: #FFFFFF !important;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #F7B731 !important;
+        }
+        .navbar .dropdown-menu {
+            background-color: #1E3A5F;
+            border: none;
+        }
+        .navbar .dropdown-menu a:hover {
+            color: #F7B731;
+        }
+        body {
+            background-color: #F0F0F0;
+            color: #333;
+        }
+        button, .btn {
+            background-color: #F7B731;
+            color: #1E3A5F;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        button:hover, .btn:hover {
+            background-color: #61A6D1;
+        }
+        footer {
+            background-color: #1E3A5F;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header" style="float: left;">
+                    <a class="navbar-brand" href="index.aspx"><img src="img/Mainlogo.png" width="130px" height="40px" /></a>
+                </div>
+                <div class="navbar-collapse collapse" style="float:right; font-size:14px;">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.aspx">Home</a></li>
+                                <li><a href="About Initiative.aspx">About Us</a></li>
+                                <li><a href="Hospital.aspx">Hospital</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.aspx">Contact Us</a></li>
+                        <li><a href="Services.aspx">Services</a></li>
+                        <li><a href="registeration.aspx">New Donor</a></li>
+                        <li><a href="search.aspx">Donor Search</a></li>
+                        <li><a href="login.aspx">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <footer id="fh5co-footer" class="padding100">
+            <div class="fh5co-footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>Who We Are</h3>
+                            <ul>
+                                <li><a href="Aboutus.aspx">About Initiative</a></li>
+                                <li><a href="Donarconditions.aspx">Donation Conditions</a></li>
+                                <li><a href="FAQ.aspx">FAQs</a></li>
+                                <li><a href="Bloodinformation.aspx">Blood Information</a></li>
+                                <li><a href="ContactUs.aspx">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="Donar.aspx">Search Donor</a></li>
+                                <li><a href="bloodtype.aspx">Search Blood Type</a></li>
+                                <li><a href="#">Register as New Donor</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Additional Links</h3>
+                            <ul>
+                                <li><a href="http://www.mohp.gov.eg/" target="_blank">Ministry of Health</a></li>
+                                <li><a href="http://bloodegy.weebly.com/" target="_blank">Egyptian Blood Bank</a></li>
+                                <li><a href="http://www.egyptianrc.org/arabic/home.aspx" target="_blank">Red Crescent</a></li>
+                                <li><a href="http://www.freeblood.com/" target="_blank">Arab Blood Donors</a></li>
+                                <li><a href="http://www.bloodbanker.com/" target="_blank">Blood Donors</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+
+    <!-- Add jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Add Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
